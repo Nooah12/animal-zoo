@@ -2,7 +2,7 @@
   "name": "animal-zoo",
   "version": "1.0.0",
   "type": "module",
-  "description": "��#\u0000 \u0000a\u0000n\u0000i\u0000m\u0000a\u0000l\u0000-\u0000z\u0000o\u0000o\u0000\r\u0000 \u0000",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
