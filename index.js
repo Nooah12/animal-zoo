@@ -1,4 +1,5 @@
 import express from "express";
+import birdsRouter from "./routes/birds.js";
 import * as path from "path";
 
 const app = express();
@@ -8,9 +9,12 @@ const __dirname = path.resolve();
 app.get('/', (req, res) => {
     res.render("pages/home", 
     {
+        pageTitle: "This is the home page",
         footer: "Not copyrighted 2024"
     })
 });
+
+app.use('/birds', birdsRouter);
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
