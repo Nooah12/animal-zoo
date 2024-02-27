@@ -8,6 +8,7 @@ const __dirname = path.resolve();
 app.get('/', (req, res) => {
     res.render("pages/home", 
     {
+        pageTitle: "Zoo",
         footer: "Not copyrighted 2024"
     })
 });
