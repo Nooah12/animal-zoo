@@ -1,0 +1,29 @@
+.flex-container {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+.main-content {
+    flex: 0 0 80%;
+}
+
+.sidebar {
+    background-color: rgb(143, 172, 226);
+    flex: 0 0 20%;
+/*     padding: 24px; */
+}
+
+.message p {
+    text-align: center;
+    font-weight: 500;
+}
+
+/* @media screen and (min-width: 600px) {
+    .main-content {
+        flex: 0 0 75%;
+    }
+
+    .sidebar {
+        flex: 0 0 25%;
+    }
+} */
