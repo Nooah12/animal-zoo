@@ -1,6 +1,7 @@
 import express from "express";
 import birdsRouter from "./routes/birds.js";
 import * as path from "path";
+import mammalsRouter from "./routes/mammals.js";
 
 const app = express();
 const port = 3050;
@@ -15,6 +16,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/birds', birdsRouter);
+app.use('/mammals', mammalsRouter);
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
