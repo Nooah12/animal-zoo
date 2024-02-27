@@ -3,10 +3,14 @@
     <%- include ("../partials/head") %>
 <body>
     <%- include ("../partials/header") %>
-    <%- include('../partials/sidebar') %>
-
-    <%- include ("../partials/structure") %>
-
+    <section class="main-content">
+        <div class="side-bar">
+            <%- include('../partials/sidebar') %>
+        </div>
+        <div class="animal-info-container">
+            <%- include ("../partials/structure") %>
+        </div>
+    </section>
     <%- include ("../partials/footer") %>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <div class="animals">
     <% if (locals.animals) { %>
         <% animals.forEach(animal => { %>
+            <div class="animal-info <%= animal.name %>">
             <p><span>Name:</span> <%= animal.name %></p>
             <p><span>Lifespan:</span> <%= animal.lifespan %></p>
             <p><span>Group:</span> <%= animal.group %></p>
@@ -9,6 +10,7 @@
             <p><span>Height:</span> <%= animal.height %></p>
             <p><span>Weight:</span> <%= animal.weight %></p>
             <p><span>Found:</span> <%= animal.found %></p>
+        </div>
        <% }) %>
    <% } %>
 </div>

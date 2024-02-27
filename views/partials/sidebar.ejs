@@ -1,4 +1,9 @@
-<section class="flex-container">
+<!--<section class="flex-container">
     <div class="main-content"></div>
     <div class="sidebar"></div>
-</section>
+</section>-->
+<ul>
+    <% animals.forEach(animal => { %>
+        <li><h4 class="side-bar-animal <%= animal.name %>"><%= animal.name %></h4></li>
+   <% }) %>
+</ul>
