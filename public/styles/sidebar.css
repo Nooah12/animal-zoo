@@ -1,0 +1,30 @@
+header {
+    padding: 24px;
+    background-color: blueviolet;
+}
+
+.flex-container {
+    display: flex;
+  }
+  
+.main-content {
+    flex: 0 0 70%;
+}
+
+.sidebar {
+    background-color: rgb(125, 190, 170);
+    flex: 0 0 30%;
+    padding: 24px;
+}
+
+.message p {
+    text-align: center;
+    font-weight: 500;
+}
+
+footer {
+    background-color: rgb(139, 0, 127);
+    padding: 32px;
+    text-align: center;
+    margin-top: auto;
+  }

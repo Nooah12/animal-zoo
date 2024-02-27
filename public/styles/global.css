@@ -10,4 +10,6 @@ body {
     height: 100%;
     margin: 0;
     background-color: rgb(209, 209, 181);
+    display: flex;
+    flex-direction: column;
 }
