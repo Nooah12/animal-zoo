@@ -1,10 +1,28 @@
-<input type="checkbox" id="menuToggle" class="hidden-checkbox">
-<label for="menuToggle" class="mobile-menu__trigger"></label>
-<nav class="nav-bar">
-    <ul class="navigation">
+<script>
+    const showSidebar = () => {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    const hideSidebar= () => {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+</script>
+
+<nav>
+    <ul class="sidebar">
+        <li onclick=hideSidebar()> <a href="/"><img src ="./img/closecross.svg" hight="28" width="28"></a></li>
         <li><a href="/">Home</a></li>
         <li><a href="/mammals">Mammals</a></li>
         <li><a href="/birds">Birds</a></li>
         <li><a href="/reptiles">Reptiles</a></li>
+    </ul>
+    <ul>
+        <li><a href="/">AnimalZoo</a></li>
+        <li class="viewOnDesktop"><a href="/">Home</a></li>
+        <li class="viewOnDesktop"><a href="/mammals">Mammals</a></li>
+        <li class="viewOnDesktop"><a href="/birds">Birds</a></li>
+        <li class="viewOnDesktop"><a href="/reptiles">Reptiles</a></li>
+        <li class="menubutton" onclick=showSidebar()><a href="#"><img src ="./img/burgermenu.svg" hight="28" width="28"></a></li>
     </ul>
 </nav> 

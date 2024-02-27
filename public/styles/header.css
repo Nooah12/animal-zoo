@@ -1,5 +1,7 @@
 header {
-    background-color: #588157;
+    text-align: center;   
+}
+
+.title {
     padding: 24px;
-    text-align: center;
 }
