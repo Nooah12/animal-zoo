@@ -15,8 +15,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.9",
-    "express": "*",
-    "nodemon": "*"
+    "ejs": "*",
+    "nodemon": "*",
+    "express": "*"
+
   }
 }
