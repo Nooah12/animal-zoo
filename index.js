@@ -1,7 +1,7 @@
 import express from "express";
 import birdsRouter from "./routes/birds.js";
-import * as path from "path";
 import mammalsRouter from "./routes/mammals.js";
+import * as path from "path";
 
 const app = express();
 const port = 3050;
