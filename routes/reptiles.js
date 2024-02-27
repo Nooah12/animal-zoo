@@ -7,7 +7,7 @@ mammalsRouter.get('/', (req, res) =>
     res.render(
         "pages/home", 
         {
-            pageTitle: "Reptiles",
+            pageTitle: "Reptilessss",
             animals: reptilesArray,
             footer: "Not copyrighted 2024"
         }
