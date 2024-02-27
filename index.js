@@ -6,8 +6,9 @@ const port = 3050;
 const __dirname = path.resolve();
 
 app.get('/', (req, res) => {
-    res.render("pages/home", {
-
+    res.render("pages/home", 
+    {
+        footer: "Not copyrighted 2024"
     })
 });
 
