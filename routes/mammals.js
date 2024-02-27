@@ -1,5 +1,5 @@
 import express from "express";
-
+import { Mammals } from "../data/mammalsConstructor.js";
 
 const mammalsRouter = express.Router();
 
@@ -8,6 +8,7 @@ mammalsRouter.get('/', (req, res) =>
         "pages/home", 
         {
             pageTitle: "Mammals",
+            animals: Mammals,
             footer: "Not copyrighted 2024"
         }
     )
