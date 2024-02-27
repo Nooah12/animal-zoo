@@ -23,7 +23,7 @@ header {
     font-weight: 500;
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
     .main-content {
         flex: 0 0 75%;
     }
@@ -31,4 +31,4 @@ header {
     .sidebar {
         flex: 0 0 25%;
     }
-}
+} */
