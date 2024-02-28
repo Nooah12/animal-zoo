@@ -1,5 +1,5 @@
 import express from "express";
-import { Mammals } from "../data/mammalsConstructor.js";
+import { Mammals } from "../data/Constructor.js";
 
 const mammalsRouter = express.Router();
 

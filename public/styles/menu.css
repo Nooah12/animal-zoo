@@ -1,0 +1,83 @@
+nav {
+    background-color: #588157;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-size: 1.5rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: rgb(156, 186, 166);
+}
+
+nav .sidemenu a:hover {
+    background-color: #f0f0f0;   
+}
+
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidemenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 400px;
+    z-index: 999;
+    background-color: rgba(131, 127, 127, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /*padding: 100px 12px 12px 12px;*/
+}
+
+.sidemenu li {
+    width: 100%;
+}
+
+.sidemenu a {
+    width: 100%;
+    color: black;
+}
+
+.viewOnDesktop {
+    display: none;
+}
+
+@media(max-width: 400px){
+    .sidemenu {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .menubutton {
+        display: none;
+    }
+
+    .viewOnDesktop {
+        display: flex;
+    }
+}
