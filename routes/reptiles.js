@@ -1,17 +1,17 @@
 import express from "express";
-import { Mammals, reptilesArray } from "../data/mammalsConstructor.js";
+import { Reptiles } from "../data/Constructor.js";
 
-const mammalsRouter = express.Router();
+const reptilesRouter = express.Router();
 
-mammalsRouter.get('/', (req, res) => 
+reptilesRouter.get('/', (req, res) => 
     res.render(
         "pages/home", 
         {
             pageTitle: "Reptilessss",
-            animals: reptilesArray,
+            animals: Reptiles,
             footer: "Not copyrighted 2024"
         }
     )
 )
 
-export default mammalsRouter;
+export default reptilesRouter;
