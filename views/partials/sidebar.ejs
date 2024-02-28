@@ -3,7 +3,10 @@
     <div class="sidebar"></div>
 </section>-->
 <ul>
-    <% animals.forEach(animal => { %>
-        <li><h4 class="side-bar-animal <%= animal.name %>"><%= animal.name %></h4></li>
-   <% }) %>
+    <% if (locals.animals !== undefined && locals.animals !== null) { %>
+        <% locals.animals.forEach(animal => { %>
+            <li><h4 class="side-bar-animal <%= animal.name %>"><%= animal.name %></h4></li>
+        <% }) %>
+    <% } %>
+    
 </ul>
