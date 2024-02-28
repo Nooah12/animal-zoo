@@ -1,14 +1,14 @@
 import express from "express";
-import { Reptiles } from "../data/Constructor.js";
+import { Reptiles } from "../data/constructor.js";
 
 const reptilesRouter = express.Router();
 
 reptilesRouter.get('/', (req, res) => 
     res.render(
-        "pages/home", 
+        "pages/reptiles", 
         {
             pageTitle: "Reptilessss",
-            animals: Reptiles,
+            animals: [{ name: "Reptiles", animals: Reptiles }],
             footer: "Not copyrighted 2024"
         }
     )

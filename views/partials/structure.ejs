@@ -1,7 +1,7 @@
 <div class="animals">
-    <% if (locals.animals) { %>
+    <% if (locals.animals !== undefined && locals.animals !== null) { %>
         <% locals.animals.forEach(animal => { %>
-        <div class="animals-container">
+        <div class="animals-container <%= animal.name %>">
             <img src="<%= animal.image %>" alt="<%= animal.name %>">
             <p><span>Name:</span> <%= animal.name %></p>
             <p><span>Lifespan:</span> <%= animal.lifespan %></p>
@@ -15,6 +15,6 @@
         </div>
        <% }) %>
    <% } else { %>
-        <p><% welcomeMessage %></p>
+        <p><%= welcomeMessage %></p>
    <% } %>
 </div>
