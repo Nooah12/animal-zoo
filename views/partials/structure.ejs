@@ -2,6 +2,7 @@
     <% if (locals.animals) { %>
         <% animals.forEach(animal => { %>
         <div class="animals-container">
+            <img src="<%= animal.image %>" alt="<%= animal.name %>">
             <p><span>Name:</span> <%= animal.name %></p>
             <p><span>Lifespan:</span> <%= animal.lifespan %></p>
             <p><span>Group:</span> <%= animal.group %></p>
