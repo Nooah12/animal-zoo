@@ -3,9 +3,16 @@
     <%- include ("../partials/head") %>
 <body>
     <%- include ("../partials/header") %>
-    <%- include('../partials/sidebar') %>
 
-    <%- include ("../partials/structure") %>
+    <section class="flex-container">
+        <%- include('../partials/sidebar') %>
+        <div class="main-content">
+            <%- include ("../partials/structure") %>
+        </div>
+
+
+    </section>
+
 
     <%- include ("../partials/footer") %>
 </body>
