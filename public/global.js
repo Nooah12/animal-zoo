@@ -35,7 +35,7 @@ const displayAnimalSummary = (clickedSpecies) => {
         .then(animalData => {
             const mainContent = document.querySelector('.main-content');
             mainContent.innerHTML = `
-                <p>${animalData.image}</p>
+                <p><img src="${animalData.image}"></p>
                 <p>${animalData.name}</p>
                 <p>${animalData.lifespan}</p>
                 <p>${animalData.group}</p>
