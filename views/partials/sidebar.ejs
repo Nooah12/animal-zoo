@@ -1,1 +1,7 @@
-<div class="sidebar"></div>
+<div class="sidebar">
+    <% if (locals.animals !== undefined && locals.animals !== null) {
+            locals.animals.forEach(animal => { %>
+            <li class="sidebar-animal <%= animal.name %>"><%= animal.name %></li>
+           <% })
+        } %>
+</div>
