@@ -1,17 +1,17 @@
 <script>
-    const showSidebar = () => {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'flex'
+    const showSideMenu = () => {
+        const sidemenu = document.querySelector('.sidemenu')
+        sidemenu.style.display = 'flex'
     }
-    const hideSidebar= () => {
-        const sidebar = document.querySelector('.sidebar')
-        sidebar.style.display = 'none'
+    const hideSideMenu= () => {
+        const sidemenu = document.querySelector('.sidemenu')
+        sidemenu.style.display = 'none'
     }
 </script>
 
 <nav>
-    <ul class="sidebar">
-        <li onclick=hideSidebar()> <a href="/"><img src ="./img/closecross.svg" hight="28" width="28"></a></li>
+    <ul class="sidemenu">
+        <li onclick=hideSideMenu()> <a href="/"><img src ="./img/closecross.svg" hight="28" width="28"></a></li>
         <li><a href="/">Home</a></li>
         <li><a href="/mammals">Mammals</a></li>
         <li><a href="/birds">Birds</a></li>
@@ -23,6 +23,6 @@
         <li class="viewOnDesktop"><a href="/mammals">Mammals</a></li>
         <li class="viewOnDesktop"><a href="/birds">Birds</a></li>
         <li class="viewOnDesktop"><a href="/reptiles">Reptiles</a></li>
-        <li class="menubutton" onclick=showSidebar()><a href="#"><img src ="./img/burgermenu.svg" hight="28" width="28"></a></li>
+        <li class="menubutton" onclick=showSideMenu()><a href="#"><img src ="./img/burgermenu.svg" hight="28" width="28"></a></li>
     </ul>
 </nav> 
