@@ -1,5 +1,5 @@
 import express from "express";
-import { Birds } from "../data/mammalsConstructor.js";
+import { Birds } from "../data/Constructor.js";
 const birdsRouter = express.Router();
 
 birdsRouter.get('/', (req, res) => res.render("pages/home", {
