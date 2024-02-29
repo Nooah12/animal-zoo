@@ -3,6 +3,14 @@
     flex: 0 0 20%;
 }
 
+.sidebar .category {
+    padding-left: 20px;
+}
+
+.sidebar ul {
+    padding-left: 40px;
+
+}
 .sidebar h2 {
     font-size: 1.5rem;
 }
