@@ -16,22 +16,6 @@ export const sidemenu = [
     { name: "Reptiles", animals: Reptiles.map(animal => animal.name) }
 ];
 
-
-
-function printArray(array) {
-    array.forEach(element => {
-      if (Array.isArray(element)) {
-        printArray(element); // Recursively call the function for nested arrays
-      } else {
-        console.log(element); // Print non-array elements
-      }
-    });
-  }
-  
-  printArray(sidemenu);
-
-
-
 app.get('/', (req, res) => {
 
     res.render("pages/home", 

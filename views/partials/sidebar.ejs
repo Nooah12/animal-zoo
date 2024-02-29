@@ -1,11 +1,14 @@
 <div class="sidebar">
     <% if (locals.sidemenu !== undefined && locals.sidemenu !== null) {
         locals.sidemenu.forEach(group => { %>
+        <% const baseUrl = summaryType === 'detailed' ? `/${group.name.toLowerCase()}` : '/animals'; %>
+
             <div class="category">
                 <h2><%= group.name %></h2> <!-- Output group name -->
                 <ul>
+                <% console.log("baseurl: " +baseUrl); %>
                 <% group.animals.forEach(animal => { %>
-                    <li class="sidebar-animal <%= animal %>"><a href="/animals/<%= animal %>?summary=<%= summaryType %>"><%= animal %></a></li>
+                    <li class="sidebar-animal <%= animal %>"><a href="<%= baseUrl %>/<%= animal %>?summary=<%= summaryType %>"><%= animal %></a></li>
                 <% }); %>
                 </ul>
             </div>

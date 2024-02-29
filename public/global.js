@@ -17,11 +17,6 @@ const getAnimalName = () => {
     }
 };
 
-/*const updateLink = (animalName) => {
-    const link = document.querySelector(`.sidebar-animal.${animalName}`);
-
-}*/
-
 document.addEventListener('DOMContentLoaded', function() { 
     const animalName = getAnimalName();
     console.log("text"+ animalName);
@@ -30,28 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.add("active");
             const anchor = item.querySelector('a');
             anchor.href = "/";
-   //         updateLink(animalName);
         } else {
             item.classList.remove("active");
         }
     });
 });
-
-let activeAnimal = null;
-
-const displayAnimalSummary = (clickedSpecies) => {
-    console.log("You clicked on " + clickedSpecies);
-    fetch(`/animals/${clickedSpecies}?welcome=animal`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(animalData => {
-
-        })
-        .catch(error => {
-            console.error('Error fetching animal data:', error);
-        });
-};

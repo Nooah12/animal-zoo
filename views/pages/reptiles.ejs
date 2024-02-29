@@ -6,7 +6,13 @@
     <section class="flex-container">
         <%- include('../partials/sidebar') %>
         <div class="main-content">
-            <%- include ("../partials/welcomereptile") %>
+            <% if (summaryType === 'brief') { %>
+                <%- include("../partials/brief") %>
+            <% } else if (summaryType === 'detailed' && welcome !== undefined && !welcome) { %>
+                <%- include("../partials/detailed") %>
+            <% } else { %>
+                <%- include("../partials/welcomereptile") %>
+            <% } %>
         </div>
     </section>
     <%- include ("../partials/footer") %>
