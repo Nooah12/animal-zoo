@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
 let activeAnimal = null;
 
 const displayAnimalSummary = (clickedSpecies) => {
-    fetch(`/animals/${clickedSpecies}`)
+    console.log("You clicked on " + clickedSpecies);
+    fetch(`/animals/${clickedSpecies}?welcome=animal`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -33,23 +34,7 @@ const displayAnimalSummary = (clickedSpecies) => {
             return response.json();
         })
         .then(animalData => {
-            const mainContent = document.querySelector('.main-content');
-            mainContent.innerHTML = `
-            <div class="animals-container">
-            <div class="animals">
-                <p><img src="${animalData.image}"></p>
-                <p><span>Name: </span>${animalData.name}</p>
-                <p><span>Lifespan: </span>${animalData.lifespan}</p>
-                <p><span>Group: </span>${animalData.group}</p>
-                <p><span>Food: </span>${animalData.food}</p>
-                <p><span>Description: </span>${animalData.description}</p>
-                <p><span>Height: </span>${animalData.height}</p>
-                <p><span>Weight: </span>${animalData.weight}</p>
-                <p><span>Habitat: </span>${animalData.habitat}</p>
-                <p><span>Summary: </span>${animalData.summary}</p>
-            </div>
-            </div>
-            `;
+
         })
         .catch(error => {
             console.error('Error fetching animal data:', error);

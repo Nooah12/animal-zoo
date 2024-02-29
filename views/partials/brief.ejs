@@ -1,0 +1,14 @@
+<div class="animals">
+    <% if (locals.animal !== undefined && locals.animal !== null) { %>
+        <div class="animals-container <%= animal.name %>">
+            <img class="small" src="/<%= animal.image %>" alt="<%= animal.name %>">
+            <p><span>Name:</span> <%= animal.name %></p>
+            <p><span>Summary:</span> <%= animal.summary %></p>
+            <p><span>Food:</span> <%= animal.food %></p>
+            <p><span>Group:</span> <a href="/<%= animal.group %>"><%= animal.group %></a></p>
+            <p><a href="/animals/<%= animal.name %>?summary=detailed" ><button>More info...</button></a></p>
+        </div>
+    <% } else { %>
+        <p>No animal for you!</p>
+    <% } %>
+</div>
