@@ -5,7 +5,7 @@
                 <h2><%= group.name %></h2> <!-- Output group name -->
                 <ul>
                 <% group.animals.forEach(animal => { %>
-                    <li class="sidebar-animal"><a href="/animals/<%= animal %>?summary=<%= summaryType %>"><%= animal %></a></li>
+                    <li class="sidebar-animal <%= animal %>"><a href="/animals/<%= animal %>?summary=<%= summaryType %>"><%= animal %></a></li>
                 <% }); %>
                 </ul>
             </div>
