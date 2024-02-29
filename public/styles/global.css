@@ -26,15 +26,11 @@ body {
     padding-top: 50px;
 }
 
-
-.animals-container {
-    display: none;
-}
-
 .main-content {
     background-image: url('/img/zoo-hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 .main-content .textbox {

@@ -7,6 +7,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 16px;
     margin: 16px;
+    width: 60%;
 }
 
 .animals-container img {

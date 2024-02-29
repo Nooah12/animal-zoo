@@ -35,16 +35,20 @@ const displayAnimalSummary = (clickedSpecies) => {
         .then(animalData => {
             const mainContent = document.querySelector('.main-content');
             mainContent.innerHTML = `
+            <div class="animals-container">
+            <div class="animals">
                 <p><img src="${animalData.image}"></p>
-                <p>${animalData.name}</p>
-                <p>${animalData.lifespan}</p>
-                <p>${animalData.group}</p>
-                <p>${animalData.food}</p>
-                <p>${animalData.description}</p>
-                <p>${animalData.height}</p>
-                <p>${animalData.weight}</p>
-                <p>${animalData.habitat}</p>
-                <p>${animalData.summary}</p>
+                <p><span>Name: </span>${animalData.name}</p>
+                <p><span>Lifespan: </span>${animalData.lifespan}</p>
+                <p><span>Group: </span>${animalData.group}</p>
+                <p><span>Food: </span>${animalData.food}</p>
+                <p><span>Description: </span>${animalData.description}</p>
+                <p><span>Height: </span>${animalData.height}</p>
+                <p><span>Weight: </span>${animalData.weight}</p>
+                <p><span>Habitat: </span>${animalData.habitat}</p>
+                <p><span>Summary: </span>${animalData.summary}</p>
+            </div>
+            </div>
             `;
         })
         .catch(error => {
