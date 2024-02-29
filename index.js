@@ -1,5 +1,5 @@
 import express from "express";
-import animalRouter from "./routes/animals.js";
+import homeRouter from "./routes/home.js";
 import birdsRouter from "./routes/birds.js";
 import mammalsRouter from "./routes/mammals.js";
 import reptilesRouter from "./routes/reptiles.js";
@@ -16,22 +16,25 @@ export const sidemenu = [
     { name: "Reptiles", animals: Reptiles.map(animal => animal.name) }
 ];
 
-app.get('/', (req, res) => {
+app.use(express.static("public"));
 
+app.get('/', (req, res) => {
     res.render("pages/home", 
     {
         sidemenu: sidemenu,
         footer: "Not copyrighted 2024",
-        summaryType: "brief"
+        summaryType: "brief",
+        urlPath: req.path,
     })
 });
 
-app.use('/', animalRouter);
+
+
 app.use('/birds', birdsRouter);
 app.use('/mammals', mammalsRouter);
 app.use('/reptiles', reptilesRouter);
+app.use('/', homeRouter);
 
-app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
