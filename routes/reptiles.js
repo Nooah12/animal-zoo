@@ -10,8 +10,6 @@ reptilesRouter.get('/', (req, res) => {
     res.render("pages/reptiles", {
         sidemenu: sidemenu,
         footer: "Not copyrighted 2024",
-        summaryType: "Brief",
-        welcome: true,
         urlPath: req.originalUrl
     });
 });
@@ -25,12 +23,10 @@ reptilesRouter.get('/:name', (req, res) => {
             animalData = animal;
         }
     });
-    res.render("pages/reptiles", {
+    res.render("pages/animal-detailed", {
         sidemenu: sidemenu,
         animal: animalData,
         footer: "Not copyrighted 2024",
-        summaryType: "detailed",
-        welcome: false,
         urlPath: req.originalUrl
     })
 });

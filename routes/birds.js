@@ -10,8 +10,6 @@ birdsRouter.get('/', (req, res) => {
     res.render("pages/birds", {
         sidemenu: sidemenu,
         footer: "Not copyrighted 2024",
-        summaryType: "Brief",
-        welcome: true,
         urlPath: req.originalUrl
     });
 });
@@ -26,12 +24,10 @@ birdsRouter.get('/:name', (req, res) => {
         }
     });
   
-    res.render("pages/birds", {
+    res.render("pages/animal-detailed", {
         sidemenu: sidemenu,
         animal: animalData,
         footer: "Not copyrighted 2024",
-        summaryType: "detailed",
-        welcome: false,
         urlPath: req.originalUrl
     })
 });

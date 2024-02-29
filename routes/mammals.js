@@ -10,8 +10,6 @@ mammalsRouter.get('/', (req, res) => {
     res.render("pages/mammals", {
         sidemenu: sidemenu,
         footer: "Not copyrighted 2024",
-        summaryType: "Brief",
-        welcome: true,
         urlPath: req.originalUrl
     });
 });
@@ -26,12 +24,10 @@ mammalsRouter.get('/:name', (req, res) => {
         }
     });
 
-    res.render("pages/mammals", {
+    res.render("pages/animal-detailed", {
         sidemenu: sidemenu,
         animal: animalData,
         footer: "Not copyrighted 2024",
-        summaryType: "detailed",
-        welcome: false,
         urlPath: req.originalUrl
     })
 });
