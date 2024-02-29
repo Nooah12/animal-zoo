@@ -1,8 +1,6 @@
 <div class="sidebar">
     <% if (locals.sidemenu !== undefined && locals.sidemenu !== null) {
-        console.log("Path:"+urlPath);
         urlPath = urlPath.replace(/\/[^/]+$/, '/');
-        console.log("Modified:"+urlPath);
         locals.sidemenu.forEach(group => { %>
             <div class="category">
                 <h2><%= group.name %></h2>

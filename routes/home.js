@@ -3,8 +3,7 @@ import {Birds, Mammals, Reptiles} from "../data/constructor.js";
 import { sidemenu } from "../index.js";
 const homeRouter = express.Router();
 
-
-export const animals = [
+const animals = [
     { name: "Birds", animals: Birds },
     { name: "Mammals", animals: Mammals },
     { name: "Reptiles", animals: Reptiles }

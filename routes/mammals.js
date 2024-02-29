@@ -2,7 +2,7 @@ import express from "express";
 import { Mammals } from "../data/constructor.js";
 const mammalsRouter = express.Router();
 
-export const sidemenu = [
+const sidemenu = [
     { name: "Mammals", animals: Mammals.map(animal => animal.name) }
 ];
 
