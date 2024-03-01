@@ -10,11 +10,15 @@
 .sidebar ul {
     padding-left: 40px;
     list-style: none;
-    text-decoration: none;
 }
 
-.sidebar ul a {
-    margin: 16px;
+.sidebar ul li {
+    margin-top: 5px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: rgb(36, 35, 35);
 }
 
 .sidebar h2 {
