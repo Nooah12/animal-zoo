@@ -9,8 +9,14 @@
 
 .sidebar ul {
     padding-left: 40px;
-
+    list-style: none;
+    text-decoration: none;
 }
+
+.sidebar ul a {
+    margin: 16px;
+}
+
 .sidebar h2 {
     font-size: 1.5rem;
 }

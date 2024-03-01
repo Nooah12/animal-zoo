@@ -40,6 +40,7 @@ body {
     margin: 0 50px;
     padding: 50px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .textbox h2, .textbox p {
