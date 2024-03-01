@@ -8,8 +8,8 @@ const hideSideMenu= () => {
 }
 
 const getAnimalName = () => {
-    const url = window.location.href;
-    const matches = url.match(/\/animals\/([^?]+)/);
+    const url = window.location.pathname;
+    const matches = url.match(/\/([^/]+)$/);
     if (matches && matches.length > 1) {
         return matches[1];
     } else {
@@ -19,12 +19,13 @@ const getAnimalName = () => {
 
 document.addEventListener('DOMContentLoaded', function() { 
     const animalName = getAnimalName();
-    console.log("text"+ animalName);
     document.querySelectorAll('.sidebar-animal').forEach(item => { 
         if (item.classList.contains(animalName)) {
             item.classList.add("active");
             const anchor = item.querySelector('a');
-            anchor.href = "/";
+            const pathSegments = window.location.pathname.split('/');
+            const baseUrl = pathSegments.length > 2 && ['birds', 'mammals', 'reptiles'].includes(pathSegments[1]) ? `/${pathSegments[1]}/` : '/';
+            anchor.href = baseUrl;
         } else {
             item.classList.remove("active");
         }

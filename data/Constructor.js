@@ -21,7 +21,7 @@ const echidna = new Animal(
     "76 Cm", 
     "10 Kg", 
     "Throughout Australia", 
-    "Nature's spiky DIY enthusiasts! With a face like an anteater-vacuum mashup and a coat of quills that says, 'Don't mess with me', they're the hipsters of the animal kingdom. They're proof that Mother Nature has a wicked sense of humor.")
+    "Nature's spiky DIY enthusiasts! With a face like an anteater-vacuum mashup and a coat of quills that says, 'Don't mess with me', they're the hipsters of the animal kingdom. They're proof that Mother Nature has a wicked sense of humor.");
 
 const tasmanianDevil = new Animal(
     "./img/tasmanian-devil.png" ,
@@ -33,7 +33,7 @@ const tasmanianDevil = new Animal(
     "70 Cm", 
     "10 Kg", 
     "Tasmania", 
-    "Nature's furry tornadoes on a sugar rush. With a face that says 'chaos is my middle name' and a growl that could wake the dead, they're the heavy metal rockstars of the marsupial world.")
+    "Nature's furry tornadoes on a sugar rush. With a face that says 'chaos is my middle name' and a growl that could wake the dead, they're the heavy metal rockstars of the marsupial world.");
 
 const quokka = new Animal(
     "./img/quokka.png" ,
@@ -45,7 +45,7 @@ const quokka = new Animal(
     "50 Cm", 
     "3 Kg", 
     "Only found on Rottnest Island and a few places on mainland Western Australia", 
-    "Nature's perpetual optimists. With smiles that rival Disney characters and a vibe that says 'Life's a beach,' they're the Instagram influencers of Rottnest Island, spreading joy wherever they hop.")
+    "Nature's perpetual optimists. With smiles that rival Disney characters and a vibe that says 'Life's a beach,' they're the Instagram influencers of Rottnest Island, spreading joy wherever they hop.");
 
 export const Mammals = [echidna, tasmanianDevil,quokka];
 
@@ -71,7 +71,7 @@ const kookaburra = new Animal(
     "43 cm", 
     "300 g", 
     "Australia wide", 
-    "Nature's laugh track. With a cackle that could rival a sitcom audience, they're the outback's stand-up comedians, finding humor in everything, even their own jokes.")
+    "Nature's laugh track. With a cackle that could rival a sitcom audience, they're the outback's stand-up comedians, finding humor in everything, even their own jokes.");
 
 const yellowTailedBlackCockatoo = new Animal(
     "./img/yellow-tailed-cockatoo.png" ,
@@ -83,7 +83,7 @@ const yellowTailedBlackCockatoo = new Animal(
     "65 cm", 
     "900 g", 
     "SE Australia", 
-    "Nature's rebel poets. With black feathers and a splash of yellow, they're the punk rockers of the bird world, coolly perched in trees, reminding us that being different is always in style.")
+    "Nature's rebel poets. With black feathers and a splash of yellow, they're the punk rockers of the bird world, coolly perched in trees, reminding us that being different is always in style.");
 
 export const Birds = [cassowary, kookaburra, yellowTailedBlackCockatoo];
 
@@ -97,7 +97,7 @@ let lizard = new Animal(
     "90 cm",
     "1 kg",
     "Northern Australia",
-  );
+    "Ever seen a lizard groove? They've got moves that'll make you chuckle. With their cool vibes and quirky antics, lizards are nature's little comedians. Catch them in action and prepare for a show that's sure to bring a smile.");
 
   let turtle = new Animal(
     "./img/hawksbill-turtle.png",
@@ -109,7 +109,7 @@ let lizard = new Animal(
     "80cm (carapace)",
     "50 kg",
     "Tropical coasts of Queensland, Northern Territory and Western Australia.",
-  );
+    "Meet the turtles, the chill kings of the pond. With their laid-back demeanor and slow-motion antics, they're the zen masters of the animal kingdom. Watch them glide through life with grace and ease, reminding us to take it slow and enjoy the journey.");
 
   let perentie = new Animal(
     "./img/perentie.png",
@@ -121,6 +121,6 @@ let lizard = new Animal(
     "2.5 m",
     "20 kg",
     "Deserts",
-  );
+    "Behold the perenties, the desert dynamos of the reptile world. With their sleek scales and stealthy moves, they're the undisputed rulers of the outback. These majestic lizards roam the arid landscapes with confidence, showcasing the beauty and resilience of Australia's wilderness.");
 
 export const Reptiles  = [lizard, turtle, perentie];
